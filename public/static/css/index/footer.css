@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* 页脚区域 */
+/* 快捷导航 */
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 0;
+    width: 100%;
+    height: 150px;
+    /*margin: 20px auto 0;*/
+    background-color: #333;
+}
+#footer .footer-line {
+    height: 100%;
+    border-right: 1px solid #555;
+}
+#footer .footer-nav {
+    text-align: center;
+}
+#footer .footer-nav dt {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #9F9F9F;
+    font-weight: bold;
+}
+#footer .footer-nav dd a {
+    font-size: 14px;
+    color: #999999;
+    line-height: 25px;
+}
+#footer .footer-nav dd a:hover {
+    color: #eee;
+}
+
+/* 微信公众号 */
+#footer .footer-wechat {
+    text-align: center;
+}
+#footer .footer-wechat dt {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #9F9F9F;
+    font-weight: bold;
+}
+#footer .footer-wechat dd img {
+    width: 105px;
+}
+
+/* 小程序 */
+#footer .footer-mini-program {
+    text-align: center;
+}
+#footer .footer-mini-program dt {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #9F9F9F;
+    font-weight: bold;
+}
+#footer .footer-mini-program dd img {
+    width: 105px;
+}
+
+/* 版权区域 */
+#footer .footer-copyright {
+    text-indent: 2em;
+}
+#footer .footer-copyright p {
+    color: #9F9F9F;
+    line-height: 30px;
+}
+#footer .footer-copyright p a {
+    color: #9F9F9F;
+}
+#footer .footer-copyright p a:hover {
+    color: #eee;
+}
+#footer .footer-copyright p:nth-child(2) a {
+    margin-right: 10px;
+}
+#footer .footer-copyright p:nth-child(2) a img {
+    width: 20px;
+    height: 20px;
+}
+#footer .footer-copyright p > span {
+    margin-right: 15px;
+}
+/* 版权区域-小屏幕 */
+#footer .footer-copyright-sm {
+    text-indent: 2em;
+    background-color: #333;
+}
+#footer .footer-copyright-sm p {
+    text-align: center;
+    color: #9F9F9F;
+    line-height: 30px;
+}
+#footer .footer-copyright-sm p a {
+    color: #9F9F9F;
+}
+#footer .footer-copyright-sm p a:hover {
+    color: #eee;
+}
+#footer .footer-copyright-sm p:nth-child(2) a {
+    margin-right: 10px;
+}
+#footer .footer-copyright-sm p:nth-child(2) a img {
+    width: 20px;
+    height: 20px;
+}
+#footer .footer-copyright-sm p > span {
+    margin-right: 15px;
+}

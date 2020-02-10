@@ -1,0 +1,508 @@
+@charset "utf-8";
+/* 页面主体区域 */
+#zsp-container {
+    /*保证footer是相对于container位置绝对定位*/
+    position:relative;
+    width:100%;
+    min-height:100%;
+    /*设置padding-bottom值大于等于footer的height值，以保证main的内容能够全部显示出来而不被footer遮盖；*/
+    padding-bottom: 200px;
+    box-sizing: border-box;
+}
+/* 顶部通知栏 */
+.zsp-header-notice {
+    position: relative;
+    margin: 15px auto 10px auto;
+    padding: 0 5px;
+    box-sizing: border-box;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+.zsp-header-notice span.notice-icon {
+    position: absolute;
+    left: 5px;
+    top: 11px;
+    color: #c00;
+}
+.zsp-header-notice p.notice-content {
+    line-height: 40px;
+    text-indent: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; /* 必须结合的属性，将对象作为弹性伸缩盒子模型显示 */
+    -webkit-line-clamp:2; /* 控制文本的行数 */
+    -webkit-box-orient:vertical; /* 必须结合的属性，设置或检索伸缩盒对象的子元素的排列方式 */
+}
+
+/* 顶部banner区域 */
+.zsp-banner {
+
+}
+.zsp-banner-wrap .layui-carousel img {
+    width: 100%;
+    height: 100%;
+}
+.zsp-quick-nav .quick-nav-list {
+    height: 137px;
+}
+.quick-nav .quick-nav-item {
+    display: inline-block;
+    float: left;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #eee;
+    margin:0px 0px -1px -1px;
+}
+.quick-nav .quick-nav-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.quick-nav .quick-nav-item a:hover {
+    background-color: #f2f2f2;
+    color: #5fb878;
+}
+
+/* 主体区域 */
+.zsp-container {
+    margin: 10px auto 0;
+}
+/* 文章列表 */
+.zsp-article {
+
+}
+.zsp-article {
+
+}
+.zsp-article .layui-tab .layui-tab-content {
+    padding: 10px 0;
+}
+.article-item {
+    /*height: 150px;*/
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.article-item .article-img {
+    /*max-height: 120px;*/
+}
+.article-item .article-img img {
+    width: 100%;
+    height: 100%;
+    /*max-height: 120px;*/
+}
+.article-item .article-info {
+    padding: 0 10px 0 15px;
+}
+.article-item .article-info h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+.article-item .article-info p {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    color: #999;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.zsp-page-wrap {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.zsp-page-wrap .layui-laypage {
+    /*margin: 10px auto;*/
+}
+/*.article-item .article-info .info-list {*/
+/*    margin-top: 33px;*/
+/*    height: 30px;*/
+
+/*}*/
+/*.article-item .article-info .info-list .info-item {*/
+/*    display: inline-block;*/
+/*    margin-right: 20px;*/
+/*    color: #333;*/
+/*}*/
+
+/* 右侧模块 */
+.zsp-side-module {
+
+}
+/* 管理员信息 */
+.zsp-side-module .side-admin-info {
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.zsp-side-module .side-admin-info .admin-info-wrap {
+    height: 230px;
+    border-bottom: 1px solid #ddd;
+}
+.zsp-side-module .side-admin-info .admin-photo {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+.zsp-side-module .side-admin-info .admin-photo img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* 针对 IE8 以及更早的版本 */
+}
+.zsp-side-module .side-admin-info .admin-photo img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* 针对 IE8 以及更早的版本 */
+}
+.zsp-side-module .side-admin-info .admin-name {
+    height: 50px;
+}
+.zsp-side-module .side-admin-info .admin-name h3 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.zsp-side-module .side-admin-info .admin-desc {
+    height: 30px;
+}
+.zsp-side-module .side-admin-info .admin-desc p {
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+.zsp-side-module .side-admin-info .admin-addr {
+    height: 30px;
+}
+.zsp-side-module .side-admin-info .admin-addr p {
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+.zsp-side-module .side-admin-info .admin-info-contact {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+}
+.zsp-side-module .side-admin-info .admin-info-contact a {
+    font-size: 30px;
+    line-height: 50px;
+    color: #333;
+}
+.zsp-side-module .side-admin-info .admin-info-contact a i {
+    font-size: 30px;
+}
+.zsp-side-module .side-admin-info .admin-info-contact a:hover {
+    color: #5FB878;
+}
+.zsp-side-module .side-admin-info .wechat {
+
+}
+
+/* 搜索框 */
+.search-wrap {
+    margin: 10px auto;
+}
+.search-wrap form input {
+    float: left;
+    /*max-width: 185px;*/
+    margin-right: 5px;
+}
+
+/* 热门文章排行 */
+.zsp-hot-article {
+    margin: 15px auto 0;
+}
+.zsp-hot-article ul {
+    counter-reset: section;
+}
+.zsp-hot-article .hot-article-item {
+    height: 30px;
+    line-height: 30px;
+}
+.zsp-hot-article .hot-article-item::before {
+    counter-increment: section;
+    content: counter(section);
+    display: inline-block;
+    padding: 0 6px;
+    margin-right: 10px;
+    height: 18px;
+    line-height: 18px;
+    background: #717070;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.zsp-hot-article .hot-article-item:nth-child(1)::before {
+    background:#e24d46;
+}
+.zsp-hot-article .hot-article-item:nth-child(2)::before {
+    background:#2ea7e0;
+}
+.zsp-hot-article .hot-article-item:nth-child(3)::before {
+    background:#6bc30d;
+}
+
+/* 微信公众号 */
+.zsp-wechat {
+    margin: 15px auto 0;
+}
+.zsp-wechat img {
+    width: 100%;
+}
+
+/* 侧边栏友情链接 */
+.zsp-link {
+    margin: 15px auto 0;
+}
+
+/* 发表文章 */
+.add-article {
+    background-color: #fff;
+}
+.add-article .layui-tab-content {
+    padding: 20px;
+}
+.add-article .layui-form-select .layui-anim {
+    z-index: 5 !important;
+}
+.add-article #content {
+    z-index: -1;
+}
+.file-wrap {
+    position: relative;
+}
+.file-wrap .upload-file {
+    padding-top: 5px;
+}
+
+/* 文章详情页 */
+.detail-header {
+    height: 80px;
+}
+.detail-header h1 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+.detail-header .article-info {
+    margin-top: 10px;
+    height: 20px;
+    text-align: center;
+}
+.detail-header .article-info span {
+    margin-right: 20px;
+}
+.article-content {
+    margin-top: 20px;
+}
+/* 前台文章详情页 */
+.article-content h2 {
+    font-size: 20px;
+    line-height: 2em;
+}
+.article-content {
+    line-height: 1.5em;
+}
+
+/* blockquote 样式 */
+blockquote {
+    display: block;
+    border-left: 8px solid #d0e5f2;
+    padding: 5px 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 100%;
+    background-color: #f1f1f1;
+}
+
+.article-toolbar {
+    margin-top: 20px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #ddd;
+}
+.article-toolbar .article-like {
+
+}
+.article-toolbar .article-share {
+
+}
+
+/* 文章详情页评论区 */
+.comments {
+    margin: 30px auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+.comments-wrap {
+    margin-top: 20px;
+}
+.comments-title {
+    height: 36px;
+    line-height: 36px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-indent: 1em;
+    text-align: left;
+    background-color: #FBFBFB;
+    border: 1px solid #e6e6e6;
+}
+.comments-item {
+    margin: 15px auto;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+}
+.comments-item .comments-item-info {
+    margin: 10px auto;
+}
+.comments-item .comments-item-info .comments-item-face {
+    float: left;
+    width: 45px;
+    height: 45px;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.comments-item .comments-item-info .comments-item-face img {
+    width: 43px;
+    height: 43px;
+    border-radius: 5px;
+}
+.comments-item .comments-item-info .comments-item-user {
+    float: left;
+    margin-left: 10px;
+    padding-top: 5px;
+    height: 45px;
+}
+.comments-item .comments-item-info .comments-item-user div {
+    height: 15px;
+    line-height: 15px;
+}
+.comments-item .comments-item-info .comments-item-user .user-name {
+    margin-bottom: 10px;
+    color: #64aaed;
+}
+.comments-item .comments-item-info .comments-item-user .user-time {
+    color: #999;
+}
+.comments-item .comments-item-content {
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+.comments-item .comments-item-content a {
+    color: #64aaed;
+}
+.comments-item .comments-item-content a:hover {
+    color: #666;
+}
+.comments-item .comments-reply {
+    margin-top: 15px;
+}
+.comments-item .comments-reply a {
+    margin-right: 10px;
+    color: #777;
+}
+.comments-item .comments-reply a:hover {
+    color: #333;
+}
+.add-comments .add-comments-title {
+    font-weight: bold;
+}
+/* 发表评论 */
+.simditor .simditor-body {
+    padding: 5px 15px !important;
+    min-height: 100px !important;
+}
+.isLogin {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #999;
+    background-color: #FBFBFB;
+    border: 1px solid #e6e6e6;
+}
+
+    /* 用户注册 */
+.zsp-user-register form {
+
+}
+.zsp-user-register form input.captcha {
+    position: relative;
+}
+.zsp-user-register form .cpatcha-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.zsp-user-register form .cpatcha-img img {
+    cursor: pointer;
+}
+.zsp-user-register fieldset legend {
+    margin-left: calc(50% - 55px);
+    font-size: 15px;
+}
+.zsp-user-register .cooperation-account {
+    text-align: center;
+}
+.zsp-user-register .cooperation-account span {
+    margin-right: 15px;
+}
+
+/* 用户登录 */
+.zsp-user-login form {
+    /*width: 50%;*/
+    /*margin: 50px auto;*/
+}
+.zsp-user-login form.form-md {
+    text-align: center;
+}
+.zsp-user-login form input.captcha {
+    position: relative;
+}
+.zsp-user-login form .cpatcha-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.zsp-user-login form .cpatcha-img img {
+    cursor: pointer;
+}
+.zsp-user-register fieldset legend,
+.zsp-user-login fieldset legend{
+    margin-left: calc(50% - 58px);
+    font-size: 16px;
+}
+.zsp-user-register .cooperation-account,
+.zsp-user-login .cooperation-account {
+    text-align: center;
+}
+.zsp-user-register .cooperation-account span,
+.zsp-user-login .cooperation-account span {
+    margin-right: 15px;
+ }
+.zsp-user-register .cooperation-account span a:hover,
+.zsp-user-login .cooperation-account span a:hover {
+    color: #5fb878;
+}

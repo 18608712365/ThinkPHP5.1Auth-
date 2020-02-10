@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* 前台顶部导航区域 */
+#header {
+    position: relative;
+    width: 100%;
+    height: 61px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.layui-container {
+    padding: 0;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layui-container .layui-row {
+    padding: 0;
+    margin: 0;
+    /*width: 1170px;*/
+}
+
+/* 顶部logo区域 */
+.header-logo {
+    float: left;
+}
+
+/* 顶部导航自定义样式 */
+.header-nav {
+    float: left;
+}
+.header-nav .layui-nav {
+    background-color: #fff;
+}
+
+/* 响应式导航控制样式 */
+.header-nav .nav-xs {
+    margin-top: 61px;
+}
+.header-nav .nav-xs .layui-this:after,
+.header-nav .nav-xs .layui-nav-item:hover:after,
+.header-nav .nav-xs .layui-nav-bar {
+    border-left: 3px;
+
+}
+.menu_close, .menu_open {
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .4);
+    overflow: hidden;
+    z-index: 102;
+}
+.menu_close:hover, .menu_open:hover {
+    /*background:#6bc30d*/
+    background-color: rgba(0, 0, 0, .4);
+}
+.menu_close span, .menu_open span {
+    display:block;
+    background:#FFF;
+    width:26px;
+    height:2px;
+    line-height:10px;
+    margin:0 auto;
+    margin-top:5px;
+}
+.menu_open span:first-child, .menu_open span:last-child, .menu_open span:nth-last-of-type(2) {
+    -webkit-transform:rotate(0);
+    transform:rotate(0);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -ms-transition:all .5s;
+    -o-transition:all .5s;
+    transition:all .5s;
+}
+.menu_close span:first-child {
+    margin-top:18px;
+}
+.menu_close span {
+    margin-top:0;
+}
+.menu_open span:first-child {
+    margin-top:12px;
+}
+.menu_close span:last-child {
+    display:none;
+}
+.menu_close span:first-child {
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -ms-transition:all .5s;
+    -o-transition:all .5s;
+    transition:all .5s;
+}
+.menu_close span:nth-of-type(2) {
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    margin-top:-2px;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -ms-transition:all .5s;
+    -o-transition:all .5s;
+    transition:all .5s;
+}
+.hover_animation {
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -ms-transition:all .5s;
+    -o-transition:all .5s;
+    transition:all .5s;
+}
+
+/* 顶部用户信息区域 */
+.header-user {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-user .layui-nav {
+    padding-right: 10px;
+    background-color: #fff;
+}
+.header-user .layui-nav .layui-nav-item:hover:after,
+.header-user .layui-nav .layui-nav-bar {
+    display: none;
+}
+.header-user .layui-nav .layui-nav-item a {
+    color: #333;
+}
+.header-user .layui-nav .layui-nav-item a .layui-nav-more {
+    border-color: #666 transparent transparent;
+}
+.header-user .layui-nav .layui-nav-item a .layui-nav-mored {
+    border-color: transparent transparent #666;
+}
+.header-user .layui-nav .layui-nav-item dl a i {
+    margin-right: 8px;
+}
+
+/* 顶部用户注册登录 */
+.header-user-login {
+    text-align: right;
+    height: 61px;
+    line-height: 61px;
+}
+.header-user-login a:nth-child(1) {
+    margin-right: 10px;
+}
